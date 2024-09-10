@@ -1,0 +1,28 @@
+{
+  "exp_dir":  "saved_textdiff/qata_cov19_v2_2",
+  "model_type": "ddpm",
+  "category": "qata_cov19_v2_2",
+  "number_class": 2,
+  "ignore_label": 255,
+
+  "training_path": "datasets/qata_cov19_v2_2/Train_Folder",
+  "validation_path": "datasets/qata_cov19_v2_2/Val_Folder",
+  "testing_path": "datasets/qata_cov19_v2_2/Test_Folder",
+  "model_path": "checkpoints/ddpm/256x256_diffusion_uncond.pt",
+
+  "image_size": 256,
+  "dim": [1024, 512, 512, 256],
+  "blocks": [4, 6, 8, 12],
+  "steps": [50, 150, 250],
+
+  "model_num": 1,
+  "batch_size": 1,
+  "max_training": 50,
+
+  "training_number": 50,
+  "testing_number": 20,
+
+  "upsample_mode":"bilinear",
+  "share_noise": true,
+  "input_activations": false
+ }
